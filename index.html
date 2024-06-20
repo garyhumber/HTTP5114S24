@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iPhone Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="calculator">
@@ -18,7 +19,7 @@
             <button class="button function" onclick="percent()">%</button>
             <button class="button operator" onclick="appendOperator('/')">÷</button>
             <!-- Row 2 -->
-            <button class="button number" onclick="appendNumber('7')">7</button>
+            <button class="button number" value= "7" onclick="appendNumber('7')">7</button>
             <button class="button number" onclick="appendNumber('8')">8</button>
             <button class="button number" onclick="appendNumber('9')">9</button>
             <button class="button operator" onclick="appendOperator('*')">×</button>
@@ -29,6 +30,8 @@
             <button class="button operator" onclick="appendOperator('-')">−</button>
             <!-- Row 4 -->
             <button class="button number" onclick="appendNumber('1')">1</button>
+            <input type="button" id="block1" value="1" onclick="dis('1')" />
+       
             <button class="button number" onclick="appendNumber('2')">2</button>
             <button class="button number" onclick="appendNumber('3')">3</button>
             <button class="button operator" onclick="appendOperator('+')">+</button>
