@@ -5,18 +5,25 @@ let operator = null; // This variable stores the current operator
 // Function to update the display
 function updateDisplay() {
     
+    document.getElementById('result').innerText = currentInput;
 }
 
 // Function to clear the display and reset variables
 function clearDisplay() {
     
-
+    currentInput = '0';
+    previousInput = '';
+    operator = null;
     updateDisplay();
 }
 
 // Function to append a number to the current input
 function appendNumber(number) {
-    
+    if (currentInput === '0' && number !== '.') {
+        currentInput = number;
+    } else {
+        currentInput += number;
+    }
     updateDisplay();
 }
 
