@@ -29,19 +29,28 @@ function appendNumber(number) {
 
 // Function to append an operator
 function appendOperator(op) {
-    
-    updateDisplay();
+    if (operator === null) {
+        previousInput = currentInput;
+        currentInput = '0';
+    } else {
+        calculate();
+        previousInput = currentInput;
+        currentInput = '0';
+    }
+    operator = op;
 }
 
 // Function to toggle the sign of the current input
 function toggleSign() {
-    
+    if (currentInput !== '0') {
+        currentInput = currentInput.startsWith('-') ? currentInput.slice(1) : '-' + currentInput;
+    }
     updateDisplay();
 }
 
 // Function to calculate percentage
 function percent() {
-    
+    currentInput = (parseFloat(currentInput) / 100).toString();
     updateDisplay();
 }
 
