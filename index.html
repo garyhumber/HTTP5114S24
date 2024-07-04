@@ -14,44 +14,29 @@
         </div>
         <div class="buttons">
             <!-- Row 1 -->
-            <div class="row-1">
-                <button class="button function" onclick="clearDisplay()">AC</button>
-                <button class="button function" onclick="toggleSign()">±</button>
-                <button class="button function" onclick="percent()">%</button>
-                <button class="button operator" onclick="appendOperator('/')">÷</button>
-            </div>
-            
+            <button class="button function" onclick="clearDisplay()">AC</button>
+            <button class="button function" onclick="toggleSign()">±</button>
+            <button class="button function" onclick="percent()">%</button>
+            <button class="button operator" onclick="appendOperator('/')">÷</button>
             <!-- Row 2 -->
-            <div class="row-2">
                 <button class="button number" onclick="appendNumber('7')">7</button>
                 <button class="button number" onclick="appendNumber('8')">8</button>
                 <button class="button number" onclick="appendNumber('9')">9</button>
                 <button class="button operator" onclick="appendOperator('*')">×</button>
-            </div>
-
             <!-- Row 3 -->
-            <div class="row-3">
-                <button class="button number" onclick="appendNumber('4')">4</button>
-                <button class="button number" onclick="appendNumber('5')">5</button>
-                <button class="button number" onclick="appendNumber('6')">6</button>
-                <button class="button operator" onclick="appendOperator('-')">−</button>
-            </div>
-            
+            <button class="button number" onclick="appendNumber('4')">4</button>
+            <button class="button number" onclick="appendNumber('5')">5</button>
+            <button class="button number" onclick="appendNumber('6')">6</button>
+            <button class="button operator" onclick="appendOperator('-')">−</button>
             <!-- Row 4 -->
-            <div class="row-4">
-                <button class="button number" onclick="appendNumber('1')">1</button>
-                <button class="button number" onclick="appendNumber('2')">2</button>
-                <button class="button number" onclick="appendNumber('3')">3</button>
-                <button class="button operator" onclick="appendOperator('+')">+</button>
-            </div>
-            
+            <button class="button number" onclick="appendNumber('1')">1</button>
+            <button class="button number" onclick="appendNumber('2')">2</button>
+            <button class="button number" onclick="appendNumber('3')">3</button>
+            <button class="button operator" onclick="appendOperator('+')">+</button>
             <!-- Row 5 -->
-            <div class="row-5">
-                <button class="button number zero" onclick="appendNumber('0')">0</button>
-                <button class="button number" onclick="appendNumber('.')">.</button>
-                <button class="button operator" onclick="calculate()">=</button>
-            </div>
-            
+            <button class="button number zero" onclick="appendNumber('0')">0</button>
+            <button class="button number" onclick="appendNumber('.')">.</button>
+            <button class="button operator" onclick="calculate()">=</button>
         </div>
     </div>
     <script src="script.js"></script>
