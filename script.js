@@ -56,6 +56,25 @@ function percent() {
 
 // Function to perform the calculation based on the operator
 function calculate() {
-    
+    if (operator === null) return;
+    let result;
+    const prev = parseFloat(previousInput);
+    const curr = parseFloat(currentInput);
+    switch (operator) {
+        case '+':
+            result = prev + curr;
+            break;
+        case '-':
+            result = prev - curr;
+            break;
+        case '*':
+            result = prev * curr;
+            break;
+        case '/':
+            result = prev / curr;
+            break;
+    }
+    currentInput = result.toString();
+    operator = null;
     updateDisplay();
 }
